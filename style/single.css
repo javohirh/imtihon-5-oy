@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Display";
+  src: url(../fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Display";
+}
+.con {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 0 20px;
+}
+.abaut {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.abaut-right {
+  width: 604px;
+}
+.title-abaut {
+  font-size: 44px;
+  font-weight: 800;
+  max-width: 450px;
+}
+.img {
+  width: 40%;
+  height: auto;
+}
+.paragrf-title {
+  max-width: 287px;
+  line-height: 24px;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+.narxi {
+  font-size: 12px;
+  line-height: 22px;
+  margin-bottom: 4px;
+}
+.bez-skidka {
+  text-decoration: line-through;
+}
+.asosiy-narxi {
+  display: flex;
+  justify-content: space-between;
+  width: 188px;
+  font-size: 24px;
+}
+.bez-skidka {
+  color: #a4a4a4;
+}
+.btn-korzinka {
+  width: 220px;
+  height: 50px;
+  background-color: #4295e4;
+  color: #fff;
+  border: 0;
+  margin-top: 16px;
+}
+@media only screen and (max-width: 800px) {
+  .abaut {
+    display: block;
+    text-align: center;
+  }
+  .abaut-right,
+  .img,
+  .asosiy-narxi,
+  .btn-korzinka,
+  .title-abaut,
+  .paragrf-title {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .abaut-right {
+    width: 100%;
+  }
+  .img {
+    width: 100%;
+  }
+}
