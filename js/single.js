@@ -4,7 +4,7 @@ const elPrice = document.querySelector(".skidka");
 const elRealPrice = document.querySelector(".bez-skidka");
 const elInfo = document.querySelector(".paragrf-title");
 const cartBtn = document.querySelector(".btn-korzinka");
-const id = localStorage.getItem("singleId");
+const id = Number(localStorage.getItem("singleId"));
 const products = JSON.parse(localStorage.getItem("products"));
 
 const product = products.filter((product) => product.id == id)[0];

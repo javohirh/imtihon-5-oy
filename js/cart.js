@@ -5,6 +5,7 @@ const elTitle = document.querySelector(".title-product");
 const elPrice = document.querySelector(".prise-product");
 const ID = JSON.parse(localStorage.getItem("id"));
 const products = JSON.parse(localStorage.getItem("products"));
+console.log(ID);
 
 let filteredProducts = products.filter((product) => {
   return ID.includes(product.id);
