@@ -8,7 +8,6 @@ const id = localStorage.getItem("singleId");
 const products = JSON.parse(localStorage.getItem("products"));
 
 const product = products.filter((product) => product.id == id)[0];
-console.log(product.image);
 
 elMainImg.src = product.image;
 elTitle.textContent = product.title;
