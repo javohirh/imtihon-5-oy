@@ -73,8 +73,8 @@ elCard.addEventListener("click", (e) => {
     e.target.classList.toggle("active-shop");
     cardElement.push(id);
     localStorage.setItem("id", JSON.stringify(cardElement));
-    localStorage.setItem("products", JSON.stringify(products));
   }
+  localStorage.setItem("products", JSON.stringify(products));
   if (e.target.classList.contains("card-main-img")) {
     const id = +e.target.dataset.id;
     localStorage.setItem("singleId", id);
